@@ -5,7 +5,7 @@
          # if there is an issue with this being random, we could instead select it
          # based on a deterministic hash of the inputs
 -        loc = random.choice(['fr_CH.UTF-8', 'es_ES', 'ru_RU.CP1251', 'kk_KZ.RK1048', 'zh_CN'])
-+        loc = random.choice(['fr_CH.UTF-8', 'es_ES', 'ru_RU.CP1251', 'kk_KZ.UTF-8', 'zh_CN'])
++        loc = random.choice(['fr_CH.UTF-8', 'es_ES.UTF-8', 'ru_RU.CP1251', 'kk_KZ.UTF-8', 'zh_CN.UTF-8'])
          return build.add_env('LANG', loc).add_env('LC_ALL', loc).add_env('LANGUAGE', '%s:fr' % loc)
  
  def exec_path(ctx, build, vary):
